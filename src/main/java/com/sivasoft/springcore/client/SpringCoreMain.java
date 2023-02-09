@@ -13,8 +13,8 @@ public class SpringCoreMain {
 		wbean1.setMessage("Hello World");
 		System.out.println(wbean1.welcome());
 		
-		ApplicationContext Context = new ClassPathXmlApplicationContext("spring-core.xml");
-		WelcomeBean wbean = Context.getBean("wBean",WelcomeBean.class);
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring-core.xml");
+		WelcomeBean wbean = context.getBean("wBean",WelcomeBean.class);
 		System.out.println(wbean.welcome());
 	}
 
